@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Jump to:",
+        "url": "/_assets/design-tokens/fre/static/icons/arrow-right-regular.e879c19.svg"
+    },
+    {
+        "name": "For Sale Near You",
+        "url": "/_assets/design-tokens/fre/static/icons/arrow-right-regular.e879c19.svg"
+    },
+    {
+        "name": "CHECK ENGINE",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/check-engine-light-icon-1616189100.jpg?crop=1.00xw:0.891xh;0,0.0295xh&resize=980:*"
+    },
+    {
+        "name": "BATTERY",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/car-battery-icon-1616188825.jpg?crop=1.00xw:0.893xh;0,0.0272xh&resize=980:*"
+    },
+    {
+        "name": "COOLANT TEMPERATURE",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/coolant-temperature-warning-light-1616192320.jpg?resize=980:*"
+    },
+    {
+        "name": "TRANSMISSION TEMPERATURE",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/transmission-tempertaure-warning-light-1616192590.jpg?crop=0.929xw:0.825xh;0.00850xw,0.0748xh&resize=980:*"
+    },
+    {
+        "name": "OIL PRESSURE WARNING",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/oil-pressure-warning-light-1616189990.jpg?crop=1.00xw:0.891xh;0,0&resize=980:*"
+    },
+    {
+        "name": "TIRE PRESSURE MONITORING SYSTEM",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/tire-pressure-warning-light-1616189822.jpg?crop=1.00xw:0.891xh;0,0.0227xh&resize=980:*"
+    },
+    {
+        "name": "BRAKE SYSTEM",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/brake-system-icon-1616189160.jpg?crop=1.00xw:0.891xh;0,0.0317xh&resize=980:*"
+    },
+    {
+        "name": "TRACTION CONTROL, STABILITY CONTROL",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/traction-control-warning-light-1616189429.jpg?crop=1.00xw:0.891xh;0,0.0567xh&resize=980:*"
+    },
+    {
+        "name": "AIRBAG WARNING",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/airbag-warning-light-1616189670.jpg?crop=1.00xw:0.891xh;0,0.0340xh&resize=980:*"
+    },
+    {
+        "name": "LAMP OUT",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/light-out-warning-light-1616191338.jpg?crop=0.949xw:0.844xh;0.00680xw,0.0499xh&resize=980:*"
+    },
+    {
+        "name": "WASHER FLUID, DOOR OPEN, LOW FUEL",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/washer-fluid-door-open-low-fuel-1616190925.jpg?crop=1.00xw:0.891xh;0,0.0567xh&resize=980:*"
+    },
+    {
+        "name": "HEADLIGHTS",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/img-4617-67b3ecd8a5c31.jpg?crop=0.699xw:0.349xh;0.165xw,0.287xh&resize=980:*"
+    },
+    {
+        "name": "SEATBELT INDICATOR",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/img-4617-67b3f094e2c36.jpg?crop=0.827xw:0.413xh;0.0799xw,0.193xh&resize=980:*"
+    },
+    {
+        "name": "FRONT FOG LIGHTS",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/img-4617-67b3f3c4195d1.jpg?crop=0.794xw:0.397xh;0.109xw,0.291xh&resize=980:*"
+    },
+    {
+        "name": "HIGH-BEAM INDICATOR",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/img-4617-67b3f67488262.jpg?crop=0.862xw:0.431xh;0.0714xw,0.268xh&resize=980:*"
+    },
+    {
+        "name": "AUTOMATIC HIGH-BEAM INDICATOR",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/img-4617-67b3f5e17924b.jpg?crop=1.00xw:0.501xh;0,0.236xh&resize=980:*"
+    },
+    {
+        "name": "AUTOMATIC EMERGENCY BRAKING DISABLED",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/screenshot-2025-03-07-at-3-13-27-pm-67cb54a0423c9.png?crop=0.969xw:0.489xh;0.0238xw,0.275xh&resize=980:*"
+    },
+    {
+        "name": "AUTOMATIC EMERGENCY STEERING DISABLED",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/screenshot-2025-03-07-at-3-13-27-pm-67d9a45f5bc75.png?crop=1.00xw:0.504xh;0,0.251xh&resize=980:*"
+    },
+    {
+        "name": "FREEZING TEMPERATURES, ROADS MAY BE ICY",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/screenshot-2025-03-07-at-3-13-27-pm-67d9a6be0643c.png?crop=1.00xw:0.504xh;0,0.245xh&resize=980:*"
+    },
+    {
+        "name": "AUTOMATIC STOP-START ACTIVE",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/screenshot-2025-03-07-at-3-13-27-pm-67d9a900eca57.png?crop=1.00xw:0.504xh;0,0.259xh&resize=980:*"
+    },
+    {
+        "name": "LANE-KEEP ASSIST OFF",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/screenshot-2025-03-07-at-3-13-27-pm-67d9aaa9a22a4.png?crop=1.00xw:0.504xh;0,0.269xh&resize=980:*"
+    },
+    {
+        "name": "IMMOBILIZER WARNING",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/img-5171-68b879eb66ea0.jpg?crop=1.00xw:0.616xh;0,0.164xh&resize=980:*"
+    },
+    {
+        "name": "VEHICLE CONNECTED TO CHARGING CABLE",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/img-5172-68b87b6dd25be.jpg?crop=1.00xw:0.678xh;0,0.171xh&resize=980:*"
+    },
+    {
+        "name": "Essential Reads: Stories and Features",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/2026-mazda-cx-5-vs-cx-50-699dd3076aac5.jpg?crop=0.501xw:1.00xh;0.248xw,0&resize=360:*"
+    }
+]

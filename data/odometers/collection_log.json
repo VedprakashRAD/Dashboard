@@ -1,0 +1,18 @@
+{
+    "status": "In Progress",
+    "sources": [
+        {
+            "id": "TRODO",
+            "name": "TRODO Dataset",
+            "url": "https://data.mendeley.com/datasets/9bsdtv2p3m/2",
+            "notes": "Downloads as a ZIP. Contains 2389 images."
+        },
+        {
+            "id": "Kaggle_Odometer",
+            "name": "Kaggle Odometer",
+            "url": "https://www.kaggle.com/datasets/craackmouse/odometer",
+            "notes": "Requires Kaggle API or manual download."
+        }
+    ],
+    "local_storage": "data/odometers/raw"
+}

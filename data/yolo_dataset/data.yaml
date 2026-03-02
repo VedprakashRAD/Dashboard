@@ -1,0 +1,5 @@
+names:
+  0: symbol
+path: /Users/vedprakashchaubey/Documents/Dashboard Symbols/data/yolo_dataset
+train: images
+val: images

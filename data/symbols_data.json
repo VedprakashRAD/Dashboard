@@ -1,0 +1,803 @@
+[
+    {
+        "id": 1,
+        "name": "Check Engine Light",
+        "description": "Indicates an issue with the engine, emissions system, or powertrain control. This light is managed by the Engine Control Unit (ECU).",
+        "startup_behavior": "Illuminates briefly (bulb check) for 2-3 seconds when the ignition is turned to 'ON'. Should extinguish immediately after the engine catches.",
+        "persistent_behavior": "If it remains on after starting or appears after driving for some time, a sensor (O2, MAF, etc.) is reporting out-of-range data. If flashing, it indicates a severe misfire causing raw fuel to enter the exhaust.",
+        "recommendation": "If solid: Scan for DTCs soon. If it appears after 10-15 mins of driving, it might be an 'operating temperature' related sensor fault. If flashing: Stop immediately to save the catalytic converter.",
+        "severity": "High"
+    },
+    {
+        "id": 2,
+        "name": "Anti-lock Braking System",
+        "description": "Indicates a fault in the ABS hydraulic modulator or wheel speed sensors.",
+        "startup_behavior": "Should light up during startup and go out after a system self-test. The ABS pump may make a brief noise.",
+        "persistent_behavior": "If it stays on, or comes on after driving a few miles, it often points to a dirty or faulty wheel speed sensor. Standard braking remains, but ABS will not intervene in a skid.",
+        "recommendation": "Drive cautiously. If it appears after hitting a bump, check sensor wiring. Have the ABS module scanned for specific wheel codes.",
+        "severity": "Medium"
+    },
+    {
+        "id": 3,
+        "name": "Airbag Indicator",
+        "description": "Signals a fault in the Supplemental Restraint System (SRS), including airbags and pretensioners.",
+        "startup_behavior": "Flashes or stays solid for 3-5 seconds on startup. This is the ECU checking circuit resistance.",
+        "persistent_behavior": "If it stays on or flashes while driving, the entire airbag system is disabled for safety. It will NOT deploy in a crash.",
+        "recommendation": "Have the system inspected immediately. Common causes include a faulty clock-spring or seatbelt buckle sensor.",
+        "severity": "High"
+    },
+    {
+        "id": 4,
+        "name": "Oil Level Warning Light",
+        "description": "Indicates the engine oil volume has reached the 'Minimum' mark on the dipstick.",
+        "startup_behavior": "Should be off. Some vehicles show a green/blue oil light when cold, turning off once warm.",
+        "persistent_behavior": "If it glows yellow/orange and stays on, you are approximately 1 quart/liter low. If it appears only during sharp turns, the level is low enough for the oil to slosh away from the sensor.",
+        "recommendation": "Check the dipstick immediately. Add the correct viscosity oil. Do not overfill.",
+        "severity": "Medium"
+    },
+    {
+        "id": 5,
+        "name": "Oil Pressure Warning",
+        "description": "Indicates that the oil pump is not generating enough pressure to lubricate critical engine components.",
+        "startup_behavior": "Lights up in red during bulb check; must extinguish within 1-2 seconds of the engine firing.",
+        "persistent_behavior": "If it flickers at idle but goes out when you rev the engine, or stays solid, the engine is being destroyed by friction.",
+        "recommendation": "STOP IMMEDIATELY. DO NOT DRIVE. Check oil level; if full, the pump or bearings have failed. TOW the vehicle.",
+        "severity": "Critical"
+    },
+    {
+        "id": 6,
+        "name": "Battery Charge Warning",
+        "description": "Signals that the alternator is not charging the battery or the drive belt has snapped.",
+        "startup_behavior": "Stays on until the engine turns over and the alternator reaches charging RPM.",
+        "persistent_behavior": "If it stays on, you are running only on battery reserve. After 20-40 minutes, the car will stall as the ignition system loses power.",
+        "recommendation": "Turn off AC, radio, and fans. Drive directly to a safe location or mechanic. Check the alternator belt for tightness.",
+        "severity": "High"
+    },
+    {
+        "id": 7,
+        "name": "Coolant Temperature Warning Light",
+        "description": "Indicates the engine temperature is nearing the 'Critical' threshold (Overheating).",
+        "startup_behavior": "Flashes red briefly on start. On some cars, a blue version stays on until the engine reaches 120°F (50°C).",
+        "persistent_behavior": "If it appears red while driving, the cooling system has failed (leak, stuck thermostat, or fan failure).",
+        "recommendation": "Pull over and turn off the engine immediately. Do not open the radiator cap—it will spray boiling coolant. Check for steam or leaks.",
+        "severity": "Critical"
+    },
+    {
+        "id": 8,
+        "name": "Tire Pressure Warning Light",
+        "description": "Indicates one or more tires are below their recommended cold inflation pressure.",
+        "startup_behavior": "Glows solid for a few seconds during boot-up.",
+        "persistent_behavior": "If it comes on after driving for 10 minutes, the tires have warmed up but are still low. If it flashes at startup and then stays solid, a TPMS sensor has failed.",
+        "recommendation": "Check PSI in all tires. In winter, cold air causes this light to appear in the morning and disappear as you drive.",
+        "severity": "Medium"
+    },
+    {
+        "id": 9,
+        "name": "Traction Control/ESP Light",
+        "description": "The Electronic Stability Program is either active (working) or has a fault.",
+        "startup_behavior": "Should light up once and go out.",
+        "persistent_behavior": "If it flashes while you are driving, the car is currently slipping. If it stays solid, the system is disabled due to a fault (often a wheel speed sensor).",
+        "recommendation": "Slow down! If solid, recognize that the car won't help you catch a skid. Have the steering angle and ABS sensors checked.",
+        "severity": "Medium"
+    },
+    {
+        "id": 10,
+        "name": "Service Engine Soon",
+        "description": "A general reminder for routine maintenance, often based on mileage or run-time.",
+        "startup_behavior": "May flash a few times at startup to grab your attention.",
+        "persistent_behavior": "Stays solid until reset by a technician after service. Unlike the 'Check Engine' light, this is usually just for maintenance.",
+        "recommendation": "Check your mileage against the service log. Change oil, filters, and inspect fluids as per the manufacturer's schedule.",
+        "severity": "Low"
+    },
+    {
+        "id": 11,
+        "name": "Low Washer Fluid Light",
+        "description": "Indicates that the windshield washer fluid reservoir is nearly empty.",
+        "startup_behavior": "Should not illuminate unless the fluid is cold-contracted or actually low.",
+        "persistent_behavior": "Stays on until the reservoir is refilled. Many systems use a simple float sensor that can stick.",
+        "recommendation": "Refill with a seasonal washer mix. In winter, use a de-icing blend to prevent the pump from freezing.",
+        "severity": "Low"
+    },
+    {
+        "id": 12,
+        "name": "Automatic Shift Lock Symbol",
+        "description": "A safety feature that requires the brake pedal to be depressed before shifting out of 'Park'.",
+        "startup_behavior": "Illuminates when the ignition is on but the brake isn't pressed. Turns off once you step on the brake.",
+        "persistent_behavior": "If it stays on even when braking, the brake light switch or the shift-lock solenoid is faulty. You may be unable to move the gear lever.",
+        "recommendation": "Press the brake firmly. If stuck in Park, look for the 'Shift Lock Release' slot near the shifter to manually bypass it.",
+        "severity": "Low"
+    },
+    {
+        "id": 13,
+        "name": "Reduced Engine Power",
+        "description": "The Engine Control Module (ECM) has detected a major fault and limited throttle opening to prevent hardware failure.",
+        "startup_behavior": "Should never stay on. If it does, the car is in 'Limp Home Mode'.",
+        "persistent_behavior": "The vehicle will accelerate very slowly and may have a limited top speed (30-40 MPH). Often caused by electronic throttle body or pedal sensor failures.",
+        "recommendation": "Drive slowly to a safe location. Do not attempt to merge onto highways. Have the throttle system and wiring harness inspected.",
+        "severity": "High"
+    },
+    {
+        "id": 14,
+        "name": "Lambda Warning Light",
+        "description": "Specific to emissions monitoring, indicating the air-fuel ratio is incorrect (too rich or too lean).",
+        "startup_behavior": "Bulb check on startup. Should clear as soon as the Oxygen (Lambda) sensor heater reaches operating temp.",
+        "persistent_behavior": "If it stays on, it usually means an O2 sensor is dead or there is a vacuum leak. This will significantly decrease your fuel economy.",
+        "recommendation": "Inspect for air leaks in the intake. Clean the MAF sensor. Replace the O2 sensor if the code persists.",
+        "severity": "Medium"
+    },
+    {
+        "id": 15,
+        "name": "Low Coolant Indicator",
+        "description": "A float sensor in the expansion tank has detected that the coolant level is below the minimum safety line.",
+        "startup_behavior": "Should be off. False alarms can occur in extreme cold as liquid volume decreases.",
+        "persistent_behavior": "If it appears after the engine warms up, you have a leak. Continuing to drive will eventually trigger the 'Overheat' light (Red).",
+        "recommendation": "Wait for the engine to COOL. Top up with the correct 50/50 antifreeze mix. Never use plain water long-term.",
+        "severity": "Medium"
+    },
+    {
+        "id": 16,
+        "name": "Glow Plug Indicator (Diesel)",
+        "description": "Signals that the glow plugs are heating the combustion chambers for a cold start.",
+        "startup_behavior": "Wait for this light to go OUT before turning the key to 'Start'. In summer, it might only flash for a split second.",
+        "persistent_behavior": "If it flashes while driving or stays on after the engine is warm, there is a fault in the plug control module or a plug has burnt out. May cause hard starting.",
+        "recommendation": "Test glow plug resistance. In modern diesels, this light can also indicate general engine management faults.",
+        "severity": "Medium"
+    },
+    {
+        "id": 17,
+        "name": "Fuel Filter Level Warning",
+        "description": "Common on diesels; indicates the water-trap in the fuel filter is full.",
+        "startup_behavior": "Should clear after startup.",
+        "persistent_behavior": "If persistent, water is entering your high-pressure fuel system, which can cause thousands in damage to injectors.",
+        "recommendation": "Locate the drain valve at the bottom of the fuel filter and bleed out the water/sediment immediately.",
+        "severity": "Medium"
+    },
+    {
+        "id": 18,
+        "name": "Power Steering Warning Light",
+        "description": "Indicates a fault in the Electric Power Steering (EPS) or low fluid in Hydraulic systems.",
+        "startup_behavior": "Should extinguish once the engine runs and the alternator provides enough current for the EPS motor.",
+        "persistent_behavior": "If it stays on, steering will become extremely difficult (manual effort). For hydraulic systems, it often indicates a leak in the rack or pump.",
+        "recommendation": "Check power steering fluid level (if applicable). In EPS systems, restart the car; if it persists, have the torque sensor checked.",
+        "severity": "High"
+    },
+    {
+        "id": 19,
+        "name": "Electronic Throttle Control Light",
+        "description": "Indicates a 'fly-by-wire' system fault where the pedal and throttle plate are out of sync.",
+        "startup_behavior": "Bulb check during startup. Often looks like a lightning bolt between two brackets.",
+        "persistent_behavior": "If it appears after starting, the car may not respond to the gas pedal or may surge. This is a high-priority safety fault.",
+        "recommendation": "Cycle the ignition. If it returns, have the throttle body cleaned and the T-TPS (Throttle Position Sensor) tested.",
+        "severity": "High"
+    },
+    {
+        "id": 20,
+        "name": "Particle Filter Warning (Diesel)",
+        "description": "The Diesel Particulate Filter (DPF) is restricted by soot and requires regeneration.",
+        "startup_behavior": "Should clear after startup.",
+        "persistent_behavior": "If it appears after short-trip city driving, the filter can't get hot enough to 'self-clean'. If ignored, it will clog the exhaust and stall the engine.",
+        "recommendation": "Drive at 50+ MPH (80+ KPH) for 20 minutes to trigger 'Active Regeneration'. If the light is red, a manual regeneration is needed.",
+        "severity": "High"
+    },
+    {
+        "id": 21,
+        "name": "Low Fuel Level",
+        "description": "Indicates the fuel in the tank has dropped below the reserve level (typically 1-2 gallons or 5-10 liters).",
+        "startup_behavior": "May illuminate briefly if the car is parked on an incline, then go out once level on flat ground.",
+        "persistent_behavior": "Stays on until fuel is added. Running consistently on low fuel can overheat the fuel pump, which is cooled by the fuel itself.",
+        "recommendation": "Refuel immediately. Do not 'top off' excessively, but avoid running the tank to empty to protect the fuel injectors from sediment.",
+        "severity": "Medium"
+    },
+    {
+        "id": 22,
+        "name": "Catalytic Converter Warning",
+        "description": "Indicates the catalytic converter is not efficiently scrubbing emissions or is overheating.",
+        "startup_behavior": "Should be off. ECU monitors efficiency only after the 'Close Loop' operating temp is reached.",
+        "persistent_behavior": "Often caused by an engine misfire or rich fuel mixture. If the light appears after highway driving, the converter may be partially clogged.",
+        "recommendation": "Have the exhaust backpressure tested. Address any 'Check Engine' misfire codes immediately to prevent melting the converter substrate.",
+        "severity": "High"
+    },
+    {
+        "id": 23,
+        "name": "Master Warning Light",
+        "description": "A generic 'Attention' light that accompanies a specific message in the instrument cluster display.",
+        "startup_behavior": "Flashes in sync with other system checks.",
+        "persistent_behavior": "If it stays on, check the digital info display for messages like 'Low Washer Fluid', 'Door Ajar', or 'Service Due'.",
+        "recommendation": "Toggle through your dashboard menu to find the specific fault description associated with this master icon.",
+        "severity": "Medium"
+    },
+    {
+        "id": 24,
+        "name": "Blinking Engine Light",
+        "description": "A critical 'Level 1' emergency indicating a severe engine misfire is occurring.",
+        "startup_behavior": "Should never blink. If it does, the engine is likely shaking or running very roughly.",
+        "persistent_behavior": "Blinks when the ECU detects enough unburned fuel entering the exhaust to cause a fire or melt the catalytic converter.",
+        "recommendation": "STOP IMMEDIATELY. Pull over to a safe spot and turn off the engine. Do not attempt to drive 'just a little further'. TOW only.",
+        "severity": "Critical"
+    },
+    {
+        "id": 25,
+        "name": "Transmission Temperature Warning",
+        "description": "The automatic transmission fluid (ATF) has exceeded its safe thermal limit.",
+        "startup_behavior": "Bulb check on startup. Should stay off.",
+        "persistent_behavior": "Common when towing heavy loads or driving in deep sand/snow. If it appears, the ATF is losing its lubricating properties.",
+        "recommendation": "Pull over, shift to 'Neutral' or 'Park', and keep the engine idling to let the cooler circulate fluid. Do not turn off the engine immediately unless there is a leak.",
+        "severity": "Critical"
+    },
+    {
+        "id": 26,
+        "name": "Traction Control Off",
+        "description": "Indicates the driver has manually disabled the Traction Control System (TCS).",
+        "startup_behavior": "Generally stays off unless you've pressed the 'TSC OFF' button.",
+        "persistent_behavior": "The light indicates that wheel-spin regulation is inactive. This is useful for rocking a car out of deep snow or mud.",
+        "recommendation": "Ensure you re-enable TCS for normal road driving, especially in rain or high-speed conditions.",
+        "severity": "Low"
+    },
+    {
+        "id": 27,
+        "name": "Powertrain Fault",
+        "description": "Indicates a communication or hardware fault between the engine and the transmission (limp mode).",
+        "startup_behavior": "Bulb check on start. Should clear.",
+        "persistent_behavior": "Usually limits the car to one gear (often 3rd) and limits RPM. Often caused by an internal transmission sensor or a wiring harness fault.",
+        "recommendation": "Drive slowly to a safe location. This code is often 'Dealer Only' for accurate diagnosis using high-level scan tools.",
+        "severity": "High"
+    },
+    {
+        "id": 28,
+        "name": "Overdrive Off indicator",
+        "description": "Indicates the top gear (Overdrive) in an automatic transmission is disabled.",
+        "startup_behavior": "Should stay off unless the 'O/D' button on the shifter is pressed.",
+        "persistent_behavior": "The car will remain in a lower gear, increasing engine RPM and noise at high speeds while providing more engine braking.",
+        "recommendation": "Use for towing or descending long hills. Turn back 'On' for highway cruising to save fuel.",
+        "severity": "Low"
+    },
+    {
+        "id": 29,
+        "name": "Parking Brake Light",
+        "description": "Indicates the mechanical or electronic parking brake is currently engaged.",
+        "startup_behavior": "Will stay on if you started the car with the parking brake set.",
+        "persistent_behavior": "If it stays on after you release the brake, you may have low brake fluid or a faulty 'brake position' switch.",
+        "recommendation": "Ensure the lever is fully down or the button is disengaged. If fluid is low, do not drive the car until topped up.",
+        "severity": "Medium"
+    },
+    {
+        "id": 30,
+        "name": "Differential Temperature Warning",
+        "description": "The oil in the rear or center differential has reached an unsafe temperature.",
+        "startup_behavior": "Bulb check only.",
+        "persistent_behavior": "Common on AWD/4WD performance cars after spirited driving or heavy towing. Indicates the gear oil is thinning out.",
+        "recommendation": "Reduce speed immediately. If the light stays on, stop and allow the drivetrain to cool. Change differential fluid if this light appears often.",
+        "severity": "High"
+    },
+    {
+        "id": 31,
+        "name": "DTC Warning Light",
+        "description": "Dynamic Traction Control (DTC) - a sub-function of Dynamic Stability Control (DSC) primarily found in BMWs.",
+        "startup_behavior": "Illuminates briefly during the system check. Should go out unless manually activated.",
+        "persistent_behavior": "If it stays on, DTC is active, allowing for more wheel slip (useful in deep snow). If it remains on without user activation, it indicates a DSC/DTC fault.",
+        "recommendation": "Press the button again to return to full 'DSC' mode for maximum stability. If a fault is present, check ABS/wheel speed sensors.",
+        "severity": "Medium"
+    },
+    {
+        "id": 32,
+        "name": "ESP BAS Warning Light",
+        "description": "Electronic Stability Program (ESP) and Brake Assist System (BAS) fault.",
+        "startup_behavior": "Stays on for 2 seconds during startup. Often a weak battery will cause this to stay on longer.",
+        "persistent_behavior": "If persistent, the car's emergency braking support and electronic stability are compromised. Often caused by a faulty brake light switch or steering angle sensor.",
+        "recommendation": "Perform a 'steering angle reset' by turning the wheel lock-to-lock with the engine running. If it persists, see a specialist.",
+        "severity": "Medium"
+    },
+    {
+        "id": 33,
+        "name": "Automatic Gearbox Warning",
+        "description": "Indicates a mechanical or electronic failure within the automatic transmission or its control module (TCM).",
+        "startup_behavior": "Should never stay on. ECU checks solenoid resistance during startup.",
+        "persistent_behavior": "If it stays on, the car will often enter 'Limp Mode', staying in a single gear (usually 3rd) to prevent internal damage.",
+        "recommendation": "Check transmission fluid level if possible. Avoid shifting gears aggressively. Have a technician read the P-codes from the TCM.",
+        "severity": "High"
+    },
+    {
+        "id": 34,
+        "name": "Brake Pad Warning",
+        "description": "Indicates that the brake pads have worn down to the wear-indicator sensors.",
+        "startup_behavior": "May illuminate if the sensor wire is broken or grounding out.",
+        "persistent_behavior": "Stays on until the pads are replaced and the wear sensor (usually a sacrificial wire) is renewed.",
+        "recommendation": "Schedule a brake service within the next 500-1000 miles. Do not delay, as worn pads will damage expensive rotors.",
+        "severity": "Medium"
+    },
+    {
+        "id": 35,
+        "name": "Brake System Warning",
+        "description": "A critical fault in the primary braking system (low hydraulic pressure or serious fluid loss).",
+        "startup_behavior": "Red light bulb check. Must go out immediately.",
+        "persistent_behavior": "If it stays on after releasing the parking brake, your stopping power is severely compromised. Could be a burst brake line or Master Cylinder failure.",
+        "recommendation": "STOP IMMEDIATELY. Check brake fluid level. If level is low, do not drive. If level is high but pedal is soft, TOW to a mechanic.",
+        "severity": "Critical"
+    },
+    {
+        "id": 36,
+        "name": "Service Vehicle Soon",
+        "description": "Different from 'Service Engine Soon'; typically refers to chassis faults like electronic suspension, ABS, or security systems.",
+        "startup_behavior": "Should extinguish within seconds of starting.",
+        "persistent_behavior": "Indicates a non-emissions fault that requires dealer-level diagnostic equipment to identify the specific module causing the error.",
+        "recommendation": "Consult the vehicle's message center if available. Have the car scanned for chassis (C-series) codes.",
+        "severity": "Low"
+    },
+    {
+        "id": 37,
+        "name": "4WD Engaged Indicator",
+        "description": "Confirms that the 4-wheel drive system is locked and power is being sent to all four wheels.",
+        "startup_behavior": "Will stay on if 4WD was left engaged from the previous drive.",
+        "persistent_behavior": "Indicates active 4WD. On dry pavement, this will cause 'driveline binding' and excessive tire wear.",
+        "recommendation": "Switch to 2WD for highway and dry pavement driving. Only use 4WD in snow, mud, or loose gravel.",
+        "severity": "Information"
+    },
+    {
+        "id": 38,
+        "name": "2WD Engaged Indicator",
+        "description": "Indicates power is only being sent to the rear or front wheels (Economy mode).",
+        "startup_behavior": "Default light for most 4x4 vehicles.",
+        "persistent_behavior": "Stays on during normal dry road operation.",
+        "recommendation": "None needed; this is the optimal setting for fuel efficiency and low component stress on pavement.",
+        "severity": "Information"
+    },
+    {
+        "id": 39,
+        "name": "All Wheel Drive (AWD/4WD) Warning",
+        "description": "Indicates an overheating or electronic fault in the AWD transfer case or coupling.",
+        "startup_behavior": "Should clear after startup.",
+        "persistent_behavior": "If it flashes, the system is overheating. If solid, the system is likely disabled to protect the rear differential.",
+        "recommendation": "Allow the car to sit and cool. If it stays solid, have the transfer case fluid and actuator motor checked.",
+        "severity": "Information"
+    },
+    {
+        "id": 40,
+        "name": "Hazard Lights On",
+        "description": "Indicates both left and right turn signals are flashing simultaneously.",
+        "startup_behavior": "Only active if the hazard switch is pressed.",
+        "persistent_behavior": "Flashes in sync with the external lights. Most cars will also click audibly.",
+        "recommendation": "Use when parked on the shoulder or when your vehicle is a slow-moving hazard to others.",
+        "severity": "Information"
+    },
+    {
+        "id": 41,
+        "name": "Door Ajar Symbol",
+        "description": "Indicates that one or more vehicle doors are not fully latched.",
+        "startup_behavior": "Will illuminate if a door is open while starting. Should go out once all doors are slammed shut.",
+        "persistent_behavior": "If it stays on after all doors are closed, a door-latch switch (microswitch) is likely broken or misaligned. On some cars, this prevents the alarm from being set.",
+        "recommendation": "Check each door individually. If the light persists, check the interior 'dome' lights; if they also stay on, the latch sensor is the culprit.",
+        "severity": "Medium"
+    },
+    {
+        "id": 42,
+        "name": "Hood/Bonnet Open Symbol",
+        "description": "Indicates the engine compartment cover is not securely locked.",
+        "startup_behavior": "Bulb check on startup.",
+        "persistent_behavior": "If it appears while driving, pull over immediately. Wind pressure can catch an unlatched hood and flip it against the windshield, blocking all vision.",
+        "recommendation": "Ensure the hood is dropped from a height of about 12 inches to ensure the primary and secondary latches engage. Do not drive if this light is on.",
+        "severity": "High"
+    },
+    {
+        "id": 43,
+        "name": "Lane Departure Warning (LDW)",
+        "description": "Uses a camera behind the rearview mirror to monitor lane markings.",
+        "startup_behavior": "Initializes on startup; some cars show a white or green icon when the system is ready.",
+        "persistent_behavior": "If yellow/orange, the system is disabled due to blocked cameras (snow/dirt) or a software fault. If it flashes while driving, you are drifting out of your lane.",
+        "recommendation": "Clean the windshield in front of the camera. Ensure you use turn signals, as the system ignores 'departures' when the blinker is active.",
+        "severity": "Low"
+    },
+    {
+        "id": 44,
+        "name": "Forward Collision Warning (FCW)",
+        "description": "Radar or camera-based system that detects a high closing speed with the vehicle ahead.",
+        "startup_behavior": "Self-tests on boot-up.",
+        "persistent_behavior": "If it stays on in yellow, the radar/camera is obscured or the ADAS system needs recalibration. If it flashes red with an audible beep, a crash is imminent.",
+        "recommendation": "Brake immediately if the warning beeps. If the fault light is persistent, check for mud or snow on the front grille radar sensor.",
+        "severity": "High"
+    },
+    {
+        "id": 45,
+        "name": "SRS/Airbag Warning Light",
+        "description": "The master safety light for the Supplemental Restraint System.",
+        "startup_behavior": "Red/Yellow bulb check for 5 seconds.",
+        "persistent_behavior": "If it stays on, a fault is stored in the SRS module. To protect passengers, the car may disable ALL airbags until the fault is repaired.",
+        "recommendation": "This is a priority repair. A loose connector under the seat or a damaged 'clock spring' in the steering wheel are common causes.",
+        "severity": "High"
+    },
+    {
+        "id": 46,
+        "name": "Seatbelt Reminder",
+        "description": "Indicates that a detected occupant has not fastened their seatbelt.",
+        "startup_behavior": "Should illuminate if the driver is not buckled during startup.",
+        "persistent_behavior": "Will stay on and often beep if the car exceeds 5-10 MPH without the belt engaged. Faulty 'weight sensors' in the passenger seat can trigger this if you place a heavy bag on the seat.",
+        "recommendation": "Ensure all passengers are buckled. If empty but light is on, remove heavy items from the passenger seat.",
+        "severity": "Medium"
+    },
+    {
+        "id": 47,
+        "name": "Side Airbag Warning Light",
+        "description": "Specific fault detected in the seat-mounted or curtain airbags.",
+        "startup_behavior": "Initial bulb check.",
+        "persistent_behavior": "Often indicates an issue with the sensor in the door or the wiring harness that passes through the door hinge 'boot'.",
+        "recommendation": "Avoid driving until fixed. Side impact protection is vital in T-bone style collisions.",
+        "severity": "Medium"
+    },
+    {
+        "id": 48,
+        "name": "Power Steering Warning Light",
+        "description": "Indicates a mechanical or electrical failure in the steering assistance system.",
+        "startup_behavior": "Red/Yellow bulb check. EPS cars may briefly show this if the engine isn't running and the battery is low.",
+        "persistent_behavior": "If persistent, you will have to manually fight the front wheels' weight. Very dangerous at low speeds or during sudden maneuvers.",
+        "recommendation": "If hydraulic, check fluid immediately. If electric, stay off the road. The 'torque sensor' or EPS motor likely needs replacement.",
+        "severity": "High"
+    },
+    {
+        "id": 49,
+        "name": "Icy Road/Frost Warning",
+        "description": "The ambient outside temperature has dropped near or below 37°F (3°C).",
+        "startup_behavior": "Often pings or glows snowflake-blue if the car is parked in a cold garage/outside.",
+        "persistent_behavior": "Stays on as long as the temperature is low. It is a 'weather advisory', not a mechanical fault.",
+        "recommendation": "Watch for 'Black Ice', especially on bridges and overpasses which freeze before standard roads.",
+        "severity": "Medium"
+    },
+    {
+        "id": 50,
+        "name": "Distance Warning (Safe Distance)",
+        "description": "Indicates you are following the leading vehicle too closely for your current speed.",
+        "startup_behavior": "Bulb check.",
+        "persistent_behavior": "Appears when your 'time-to-impact' drops below 2-3 seconds. In many cars, this is part of the Adaptive Cruise Control (ACC) display.",
+        "recommendation": "Back off. Maintain at least a two-car-length gap at low speeds, and more at highway speeds.",
+        "severity": "Medium"
+    },
+    {
+        "id": 51,
+        "name": "Rear Hatch/Trunk Open Symbol",
+        "description": "Indicates the rear cargo area or trunk is not securely closed.",
+        "startup_behavior": "Should be off if the trunk is slammed shut.",
+        "persistent_behavior": "If it stays on, it can trigger the alarm while the car is parked. Often caused by an object (grocery bag, etc.) caught in the latch.",
+        "recommendation": "Check for obstructions in the latch. If empty and closed, the 'Trunk Release' actuator or switch may be faulty.",
+        "severity": "Medium"
+    },
+    {
+        "id": 52,
+        "name": "Headlight Range Control Fault",
+        "description": "Indicates a mechanical or electronic failure in the automatic headlight leveling system.",
+        "startup_behavior": "During startup, HID/LED headlights will 'dance' (tilt up and down) to calibrate. This light appears if they fail to find center.",
+        "persistent_behavior": "If persistent, the headlights may be aimed too high (blinding others) or too low (limiting your vision).",
+        "recommendation": "Check the leveling sensors on the front/rear suspension arms. They often get bent or disconnected.",
+        "severity": "Low"
+    },
+    {
+        "id": 53,
+        "name": "Exterior Light Fault (Bulb Out)",
+        "description": "The Body Control Module (BCM) has detected a change in resistance, indicating a failed exterior bulb.",
+        "startup_behavior": "Appears when the lights are first turned on and the circuit is tested.",
+        "persistent_behavior": "Stays on as long as the faulty bulb is in the circuit. Rapid blinking of the turn signal indicator is a common 'audible' version of this warning.",
+        "recommendation": "Walk around the car while someone else operates the lights. Check brake lights, license plate lights, and side markers.",
+        "severity": "Medium"
+    },
+    {
+        "id": 54,
+        "name": "Highbeam Light Indicator",
+        "description": "Confirms that the high-power headlight beams are currently engaged.",
+        "startup_behavior": "Should be off. Only active if the stalk is pushed forward or pulled back.",
+        "persistent_behavior": "Stays on in bright blue. This usually deactivates the low beams to prevent heat buildup.",
+        "recommendation": "Switch to low beams immediately if you see the headlights of an oncoming car or the taillights of a car you are following.",
+        "severity": "Information"
+    },
+    {
+        "id": 55,
+        "name": "Auto High Beam Indicator",
+        "description": "Indicates the system that automatically toggles high beams based on ambient light and traffic is active.",
+        "startup_behavior": "Stays on in white/green to show the system and camera are 'Armed'.",
+        "persistent_behavior": "Will turn blue when the system actually engages the high beams. If it turns yellow, the camera's view is obstructed.",
+        "recommendation": "None. This is a convenience feature. If it's blinding others, you can manually override it using the headlight stalk.",
+        "severity": "Information"
+    },
+    {
+        "id": 56,
+        "name": "Position Light (Parking Light) Indicator",
+        "description": "Indicates that the side markers, taillights, and parking lights are on without the main headlights.",
+        "startup_behavior": "Only on if the light switch is in the first position.",
+        "persistent_behavior": "Useful for being seen while parked at dusk. If you leave these on with the engine off, you will drain the battery.",
+        "recommendation": "Ensure you turn these off when exiting the vehicle. Most modern cars will chime if you leave them on.",
+        "severity": "Information"
+    },
+    {
+        "id": 57,
+        "name": "Low Beam Headlight Indicator",
+        "description": "Confirms that the primary night-driving headlights are on.",
+        "startup_behavior": "Bulb check or automatic engagement if the 'Auto' setting and dark conditions are met.",
+        "persistent_behavior": "Usually a green or yellow icon. Stays on during night driving.",
+        "recommendation": "Standard night setting. If both indicators are on (Low and High), ensure you aren't blinding others.",
+        "severity": "Information"
+    },
+    {
+        "id": 58,
+        "name": "Front Fog Lights On",
+        "description": "Indicates the auxiliary low-mounted lights are active.",
+        "startup_behavior": "Only active if the fog light switch is 'On'.",
+        "persistent_behavior": "Provides a wide, low beam to illuminate the road edges in heavy fog or snow.",
+        "recommendation": "Turn off when the fog clears. Using fog lights on clear nights can cause glare for oncoming drivers.",
+        "severity": "Information"
+    },
+    {
+        "id": 59,
+        "name": "Rear Fog Light On",
+        "description": "Indicates a high-intensity red light on the rear of the car is active.",
+        "startup_behavior": "Must be manually turned on.",
+        "persistent_behavior": "This light is as bright as a brake light and is meant to prevent being rear-ended in 'pea-soup' fog.",
+        "recommendation": "ONLY use in extreme fog where visibility is less than 100 feet. It is highly annoying and distracting to drivers behind you in clear weather.",
+        "severity": "Information"
+    },
+    {
+        "id": 60,
+        "name": "Indication/Signal Light Fault",
+        "description": "Indicates a failure in the relay or the bulb for the turn signals.",
+        "startup_behavior": "Initial bulb check.",
+        "persistent_behavior": "If the dash arrow flashes twice as fast as normal, it means a bulb on that side is out. If it doesn't flash at all, the flasher relay or the fuse is likely dead.",
+        "recommendation": "Replace the indicator bulb immediately. Driving without functional signals is a primary safety violation.",
+        "severity": "Medium"
+    },
+    {
+        "id": 61,
+        "name": "Windshield Defrost Indicator",
+        "description": "Indicates the front windshield defroster/defogger is active.",
+        "startup_behavior": "Usually off. Only on if the 'Max Defrost' button is pressed.",
+        "persistent_behavior": "Directs maximum heat and AC (to dehumidify) to the windshield. This will significantly increase fuel consumption as the AC compressor runs constantly.",
+        "recommendation": "Turn off once the frost is cleared to return to normal climate control settings.",
+        "severity": "Information"
+    },
+    {
+        "id": 62,
+        "name": "Rear Window Defrost",
+        "description": "Indicates the electric heating elements in the rear window are active.",
+        "startup_behavior": "Should be manually turned on. Some cars turn this on automatically below 40°F (4°C).",
+        "persistent_behavior": "Heats the glass to melt ice. Most systems have a 10-15 minute timer to prevent glass stress or battery drain.",
+        "recommendation": "If the light stays on indefinitely, the timer relay may be faulty. Avoid scraping the inside of the window to protect the fragile heating lines.",
+        "severity": "Information"
+    },
+    {
+        "id": 63,
+        "name": "Cruise Control 'On' Indicator",
+        "description": "Indicates the cruise control system is powered on and ready to 'Set'.",
+        "startup_behavior": "Stays on in white or orange if the system was left in the 'On' state.",
+        "persistent_behavior": "Does not mean the car is maintaining speed—it only means the system is armed. Use the 'Set' button to lock in speed.",
+        "recommendation": "Turn off when not in use to avoid accidental speed lock-ins if you bump the steering wheel controls.",
+        "severity": "Information"
+    },
+    {
+        "id": 64,
+        "name": "Cruise Control Fault Warning",
+        "description": "The cruise control system has been disabled due to a hardware or software error.",
+        "startup_behavior": "Bulb check on startup. Should clear.",
+        "persistent_behavior": "Often stays on in orange. Can be caused by a faulty brake switch, clutch switch, or speed sensor. Adaptive systems will show this if the radar is blocked.",
+        "recommendation": "Restart the car. If it persists, have the ABS and Engine modules scanned for related codes.",
+        "severity": "Medium"
+    },
+    {
+        "id": 65,
+        "name": "Cruise Control Speed Limiter",
+        "description": "Indicates that a maximum speed 'cap' has been set by the driver.",
+        "startup_behavior": "Inactive unless manually set.",
+        "persistent_behavior": "The car will not accelerate past the set speed even if you push the pedal, unless you 'kick-down' (push through the detent at the floor).",
+        "recommendation": "Useful for avoiding speeding tickets in zones with low limits. Can be canceled via the steering wheel controls.",
+        "severity": "Information"
+    },
+    {
+        "id": 66,
+        "name": "Cruise Control 'SET' Indicator",
+        "description": "Confirms the vehicle is currently maintaining a constant speed automatically.",
+        "startup_behavior": "Only active when cruising.",
+        "persistent_behavior": "Glows green. Touching the brake, clutch, or 'Cancel' button will extinguish this light and return control to the driver.",
+        "recommendation": "Stay alert. Always keep your feet near the pedals in case you need to intervene for traffic changes.",
+        "severity": "Information"
+    },
+    {
+        "id": 67,
+        "name": "Shift Up Indicator",
+        "description": "An eco-driving aid suggesting it is time to shift to a higher gear (Manual/Paddle shift).",
+        "startup_behavior": "Appears when the engine reaches a specific RPM range based on throttle load.",
+        "persistent_behavior": "Stays on until you shift. Ignoring it consistently will decrease your MPG but won't harm the engine.",
+        "recommendation": "Follow the prompt for better fuel economy. In some cars, this light also acts as a 'rev limiter' warning.",
+        "severity": "Information"
+    },
+    {
+        "id": 68,
+        "name": "Shift Down Indicator",
+        "description": "Suggestions to downshift for more torque or to prevent engine lugging.",
+        "startup_behavior": "Appears under high load or when the RPMs drop below the safe threshold for the current gear.",
+        "persistent_behavior": "The car may shudder if you ignore this light. Common when climbing hills in a gear that is too high.",
+        "recommendation": "Shift down immediately to avoid placing excessive stress on the engine's main bearings (Lugging).",
+        "severity": "Information"
+    },
+    {
+        "id": 69,
+        "name": "Auto Windshield Wiper (Rain Sensor)",
+        "description": "Confirms the rain-sensing system is active and monitoring the windshield.",
+        "startup_behavior": "Initializes on startup. May cycle the wipers once if the windshield is already wet.",
+        "persistent_behavior": "Wipers will stay dormant until IR sensors detect moisture refraction on the glass.",
+        "recommendation": "Turn the system 'Off' before entering an automatic car wash to prevented damage to the wiper arms.",
+        "severity": "Information"
+    },
+    {
+        "id": 70,
+        "name": "Recirculated Cabin Air",
+        "description": "Indicates the HVAC system is pulling air from inside the cabin rather than from the outside cowl.",
+        "startup_behavior": "Often turns on 'Auto' when the AC is first started in summer.",
+        "persistent_behavior": "Stays active as long as the button is pressed. Using this for long periods in winter will cause the windows to fog up due to passenger breath humidity.",
+        "recommendation": "Use to block out exhaust fumes from the car ahead or to cool the car down faster. Switch to 'Fresh Air' every 30 minutes to prevent drowsiness.",
+        "severity": "Information"
+    },
+    {
+        "id": 71,
+        "name": "Heater Blower Fan Indicator",
+        "description": "Confirms the climate control fan is running.",
+        "startup_behavior": "Should stay off until the 'Auto' or manual fan control is engaged.",
+        "persistent_behavior": "On many cars, this light only appears when the fan is at its highest setting or when 'Defrost' is active.",
+        "recommendation": "If the fan doesn't blow despite the light being on, the 'Blower Motor Resistor' has likely failed.",
+        "severity": "Information"
+    },
+    {
+        "id": 72,
+        "name": "Heated Seats Indicator",
+        "description": "Confirms that the electric heating elements in the seat cushions are active.",
+        "startup_behavior": "Usually resets to 'Off' when the ignition is cycled, but some luxury cars remember the last setting.",
+        "persistent_behavior": "Uses high amperage. Prolonged use without the engine running will drain the battery quickly.",
+        "recommendation": "Adjust to the lowest comfortable setting. If the seat feels painfully hot, turn it off—heating elements can fail and cause 'hot spots'.",
+        "severity": "Information"
+    },
+    {
+        "id": 73,
+        "name": "Hill Descent Control (HDC)",
+        "description": "A system that uses ABS to pulsate the brakes automatically on steep downhills.",
+        "startup_behavior": "Self-tests on startup. Stays on if the HDC button is engaged.",
+        "persistent_behavior": "Only 'Active' at low speeds (typically under 15 MPH). You may hear a grinding or clucking noise from the ABS pump—this is normal.",
+        "recommendation": "Take your feet off the pedals and let the car steer and brake itself down the slope. Keep the wheel straight.",
+        "severity": "Information"
+    },
+    {
+        "id": 74,
+        "name": "Steering Lock Warning Light",
+        "description": "Indicates a mechanical or electronic failure in the steering column lock.",
+        "startup_behavior": "Usually flashes and goes out when the key is recognized and the lock disengages.",
+        "persistent_behavior": "If solid red, the car will NOT start. This is a security measure to prevent theft by steering the car away.",
+        "recommendation": "Wiggle the steering wheel firmly from side to side while toggling the ignition. If electronic, the steering column module may need replacement.",
+        "severity": "Medium"
+    },
+    {
+        "id": 75,
+        "name": "Brake Fluid Level Warning",
+        "description": "CRITICAL: The fluid in the reservoir is at or below the 'Add' mark.",
+        "startup_behavior": "Red bulb check. Must extinguish.",
+        "persistent_behavior": "If it flickers under hard braking, your fluid is already dangerously low. Fluid loss usually implies either worn-out brake pads or a hydraulic leak.",
+        "recommendation": "STOP IMMEDIATELY. Check the reservoir. If empty, DO NOT DRIVE. If full, the sensor or float is faulty, but treat it as a critical failure regardless.",
+        "severity": "Critical"
+    },
+    {
+        "id": 76,
+        "name": "Key Not in Vehicle Indicator",
+        "description": "Indicates the passive entry system can no longer detect the RFID key fob inside the cabin.",
+        "startup_behavior": "Should be off. If it flashes red when you try to start, the key is too far away or the battery is dead.",
+        "persistent_behavior": "If the key is removed from the car while the engine is running, this light will stay on. The car will continue to run, but it will NOT restart if you turn it off.",
+        "recommendation": "Return the key to the vehicle immediately. If the key is present, replace the CR2032 battery in the fob.",
+        "severity": "Medium"
+    },
+    {
+        "id": 77,
+        "name": "Immobilizer/Security Indicator",
+        "description": "Indicates a mismatch between the 'Key ID' and the 'ECU ID' during the security handshake.",
+        "startup_behavior": "May flash rapidly if the car doesn't recognize the chip in the key.",
+        "persistent_behavior": "If this light is blinking, the engine will likely 'crank but not start'. It prevents theft by cutting fuel or ignition.",
+        "recommendation": "Try your spare key. If it still won't start, the transceiver ring in the steering column or the master security module may have failed.",
+        "severity": "Medium"
+    },
+    {
+        "id": 78,
+        "name": "Ignition Switch Warning Light",
+        "description": "A fault in the electronic ignition switch assembly or steering column lock circuit.",
+        "startup_behavior": "Bulb check on start. Should clear.",
+        "persistent_behavior": "If persistent, the car may fail to turn off or fail to recognize 'Accessory' vs 'On' modes. High risk of being stranded.",
+        "recommendation": "Do not turn off the engine in an unsafe location if this light is on. Drive directly to a mechanic.",
+        "severity": "High"
+    },
+    {
+        "id": 79,
+        "name": "Low Electric Battery Charge (EV/Hybrid)",
+        "description": "Indicates the high-voltage traction battery has reached its minimum safe State of Charge (SoC).",
+        "startup_behavior": "Will illuminate if you parked with very low range.",
+        "persistent_behavior": "Stays on until plugged into a charger. The car may enter 'Turtle Mode' (severely reduced power) to protect the battery cells from deep discharge.",
+        "recommendation": "Find a charging station immediately. Avoid high-speed driving or heavy AC usage to extend the remaining few miles of range.",
+        "severity": "High"
+    },
+    {
+        "id": 80,
+        "name": "Brake Lights Warning",
+        "description": "Indicates that one or both of the primary rear brake light bulbs have failed.",
+        "startup_behavior": "Appears the first time you step on the brake after starting.",
+        "persistent_behavior": "Stays on as long as the circuit is open. Many cars only monitor the Outer bulbs, not the high-mount center light.",
+        "recommendation": "Replace the bulbs immediately. Without brake lights, you are at extremely high risk of being rear-ended.",
+        "severity": "High"
+    },
+    {
+        "id": 81,
+        "name": "Air Suspension Warning",
+        "description": "Indicates a pressure leak or compressor failure in the pneumatic suspension system.",
+        "startup_behavior": "Bulb check during startup. The car may sit lower until the compressor primes.",
+        "persistent_behavior": "If it stays on, the car may sag to one side or bottom out, making it dangerous to drive over bumps.",
+        "recommendation": "Inspect for visible 'sagging'. Check the air suspension fuse and listen for the compressor running continuously (indicating a leak).",
+        "severity": "Medium"
+    },
+    {
+        "id": 82,
+        "name": "Electronic Suspension Fault",
+        "description": "Indicates a fault in the variable damping or magnetic ride control sensors.",
+        "startup_behavior": "Self-tests on boot-up.",
+        "persistent_behavior": "The shocks will typically default to their 'Stiffest' setting for safety, leading to a very harsh, bouncy ride.",
+        "recommendation": "Check the connectors at the top of each shock absorber. They are exposed to road grime and often corrode.",
+        "severity": "Medium"
+    },
+    {
+        "id": 83,
+        "name": "Service Mode / Jack Mode Indicator",
+        "description": "Confirms that the air suspension is locked so the car can be safely lifted on a jack or ramp.",
+        "startup_behavior": "Should be off. Must be manually activated via the center screen/menu.",
+        "persistent_behavior": "If you drive while in this mode, the car will not automatically level itself, which can lead to handling issues.",
+        "recommendation": "Remember to deactivate 'Jack Mode' once the car is back on its tires. Most cars will auto-deactivate once you exceed 5-10 MPH.",
+        "severity": "Information"
+    },
+    {
+        "id": 84,
+        "name": "ECO Mode Indicator",
+        "description": "Indicates that 'Economy' mapping is active for the engine and transmission.",
+        "startup_behavior": "Green light. Stays on if ECO was the last selected mode.",
+        "persistent_behavior": "Reduces throttle sensitivity and shifts gears earlier to maximize MPG.",
+        "recommendation": "None. This is an efficiency setting. Switch to 'Sport' or 'Standard' if you need more passing power.",
+        "severity": "Information"
+    },
+    {
+        "id": 85,
+        "name": "Rear Spoiler Warning",
+        "description": "Indicates the active aerodynamic spoiler failed to deploy or retract correctly.",
+        "startup_behavior": "Bulb check during startup.",
+        "persistent_behavior": "The spoiler may be stuck in the 'Up' or 'Down' position. At high speeds, this can slightly alter the car's downforce and stability.",
+        "recommendation": "Avoid high speeds (unrestricted roads) until the motor or limit switch is repaired.",
+        "severity": "Medium"
+    },
+    {
+        "id": 86,
+        "name": "Lane Assist Indicator",
+        "description": "Indicates the system that provides steering corrections to stay in the lane is powered on.",
+        "startup_behavior": "White or Gray icon when armed but not seeing lines; Green when active.",
+        "persistent_behavior": "If it turns orange, the system has a fault. If it stays gray while you are clearly in a lane, the camera sensor is likely dirty.",
+        "recommendation": "Clean the windshield. Do not rely on this system to steer the car for you; it is an 'assist' only.",
+        "severity": "Information"
+    },
+    {
+        "id": 87,
+        "name": "Exhaust Fluid (AdBlue) Warning",
+        "description": "Indicates low Diesel Exhaust Fluid (DEF/AdBlue) which is used to reduce NOx emissions.",
+        "startup_behavior": "Should clear. Will show a countdown (e.g., '1000 miles remaining').",
+        "persistent_behavior": "Stays on until refilled. If you run out COMPLETELY, EPA regulations force the car into a 'No Start' condition after you turn the engine off.",
+        "recommendation": "Refill the AdBlue tank as soon as possible. Most auto parts stores sell 2.5-gallon jugs of DEF.",
+        "severity": "Medium"
+    },
+    {
+        "id": 88,
+        "name": "Convertible Roof Warning Light",
+        "description": "Indicates the motorized roof is in transition or has failed to latch securely.",
+        "startup_behavior": "Bulb check on startup.",
+        "persistent_behavior": "If it flashes while driving, the roof is not fully locked. This can lead to structural damage or water leaks.",
+        "recommendation": "Stop safely and re-cycle the roof switch to ensure a full lock. Check for debris in the folding mechanism.",
+        "severity": "Information"
+    },
+    {
+        "id": 89,
+        "name": "Blue Coolant Temp Light",
+        "description": "Informs the driver that the engine coolant has not yet reached its optimal operating temperature.",
+        "startup_behavior": "Always on when the engine is cold-started.",
+        "persistent_behavior": "Should extinguish after 3-5 minutes of driving. If it never goes out, the thermostat may be stuck 'Open'.",
+        "recommendation": "Avoid heavy acceleration or high RPMs while this light is blue. Be aware that the cabin heater will not blow hot air yet.",
+        "severity": "Information"
+    }
+]

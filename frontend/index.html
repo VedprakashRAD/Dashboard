@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadyAssist AI | Dashboard Symbol Manager</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo-container">
+            <img src="assets/images/readyassist_logo.png" alt="ReadyAssist Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">AI Predictor</a>
+            <a href="#analyzer">Model Manager</a>
+            <a href="#analyzer">Documentation</a>
+            <a href="#">Support</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="ready-badge">
+                <i data-lucide="zap"></i>
+                <span>ReadyAssist AI - V2.0 PRO</span>
+            </div>
+            <h1>Symbol Manager AI</h1>
+            <p>Deploying high-precision computer vision and ResNet-50 neural networks to decode dashboard warnings with
+                99.8% precision.</p>
+            <div class="nav-links" style="margin-top: 2rem;">
+                <a href="#analyzer"
+                    style="background:var(--primary); color:var(--secondary); padding: 1rem 2rem; border-radius: 8px; font-weight: 800; display: inline-block;">Get
+                    Started</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <img src="assets/images/hero_motivation.png" alt="AI Diagnostic Motivation"
+                style="width: 100%; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); border: 1px solid rgba(255,204,51,0.2);">
+        </div>
+    </section>
+
+    <!-- Mission & Motivation Section -->
+    <section class="mission-section fade-in-on-scroll">
+        <div class="mission-container">
+            <div class="mission-text">
+                <p class="section-label">Our Motivation</p>
+                <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Democratizing Expert
+                    Diagnostics</h2>
+                <p>Modern vehicle dashboards contain over 100 different symbols, many of which can be cryptic to even
+                    seasoned drivers. Confusion leads to anxiety, or worse, neglected maintenance that results in
+                    catastrophic engine failure.</p>
+                <p><strong>ReadyAssist Symbol Manager AI</strong> was born from a simple mission: to give every driver
+                    an expert technician in their pocket. By leveraging cutting-edge deep learning, we transform a
+                    simple photo into actionable, life-saving vehicle intelligence.</p>
+                <div class="mission-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">89+</span>
+                        <span class="stat-label">Symbols Detected</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">95%</span>
+                        <span class="stat-label">Recall Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mission-visual">
+                <i data-lucide="award"
+                    style="width: 200px; height: 200px; color: var(--primary); opacity: 0.2; position: absolute; right: 0; bottom: 0;"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intelligent Metrics Section -->
+    <section class="metrics-section">
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <span class="metric-value">0.04s</span>
+                <span class="metric-label">Inference Latency</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">87</span>
+                <span class="metric-label">Symbol Classes</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">99.8%</span>
+                <span class="metric-label">Detection Precision</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">PRO</span>
+                <span class="metric-label">Neural Engine</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Intelligent Explainer) -->
+    <section class="features-section fade-in-on-scroll">
+        <p class="section-label">Why it works</p>
+        <h2 class="section-title">Intelligent Diagnostics</h2>
+        <div class="feature-grid">
+            <div class="feature-card yellow">
+                <i data-lucide="scan"></i>
+                <h3>Dual-Stage Detection</h3>
+                <p>Combines YOLOv8 for precise symbol localization with ResNet-50 for fine-grained classification across
+                    87 classes.</p>
+            </div>
+            <div class="feature-card blue">
+                <i data-lucide="database"></i>
+                <h3>Augmented Training</h3>
+                <p>Trained on 17,800+ high-fidelity images ensuring recall even in low-light and high-noise dashboard
+                    environments.</p>
+            </div>
+            <div class="feature-card peach">
+                <i data-lucide="wrench"></i>
+                <h3>Expert Feedback</h3>
+                <p>Not just recognition—get actionable mechanical recommendations and startup behavior analysis for
+                    every recognized symbol.</p>
+            </div>
+            <div class="feature-card green">
+                <i data-lucide="bar-chart-3"></i>
+                <h3>Transparent AI</h3>
+                <p>Full technical transparency with detector and classifier confidence pills provided for every
+                    diagnostic result.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analyzer Section -->
+    <section id="analyzer" class="analyzer-section fade-in-on-scroll">
+        <div class="analyzer-container">
+            <p class="section-label">Deploy Models</p>
+            <h2 class="section-title">ReadyAssist Model Manager</h2>
+
+            <div class="upload-zone" id="drop-zone">
+                <i data-lucide="camera" id="upload-icon-main"></i>
+                <h3>Upload Dashboard Symbol</h3>
+                <p>Drag your image here or click to browse. Supports JPG, PNG, and HEIC.</p>
+                <input type="file" id="file-input" accept="image/*" hidden>
+            </div>
+
+            <div id="preview-container" class="preview-container hidden">
+                <div class="preview-card">
+                    <img id="image-preview" src="" alt="Dashboard symbol preview">
+                    <button id="remove-image" class="remove-image">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                <button id="analyze-btn" class="analyze-btn">
+                    <span>Initiate AI Analysis</span>
+                    <i data-lucide="cpu"></i>
+                </button>
+            </div>
+
+            <!-- Analysis Section (Dynamic) -->
+            <div id="results-section" class="results-section hidden">
+                <!-- Intelligent Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-bar" id="analysis-progress"></div>
+                    <div class="progress-text" id="progress-status">Optimizing Neural Weights...</div>
+                </div>
+
+                <div class="side-by-side-grid">
+                    <div id="results-container">
+                        <!-- Dynamic result cards inserted here -->
+                    </div>
+                    <div id="no-results" class="no-results hidden">
+                        <i data-lucide="alert-circle"></i>
+                        <p>No dashboard symbols recognized. Please try a clearer image.</p>
+                    </div>
+                    <!-- Web Search Intelligence Sidebar -->
+                    <div id="web-intelligence" class="web-intelligence hidden">
+                        <div class="web-card">
+                            <label>Web Intelligence Retrieval</label>
+                            <h4 id="web-title">Searching Global Knowledge Base...</h4>
+                            <div id="web-snippets" class="web-snippets">
+                                <!-- Snippets will appear here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo-container" style="display: inline-block; margin-bottom: 2rem;">
+            <img src="assets/images/readyassist_logo.png" alt="ReadyAssist Logo">
+        </div>
+        <p>&copy; 2026 ReadyAssist Automotive Services Pvt. Ltd. | AI Model Manager V2.0</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

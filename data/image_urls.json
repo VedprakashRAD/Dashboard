@@ -1,0 +1,358 @@
+[
+    {
+        "name": "1. Check Engine Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Check-Engine-Light.jpg"
+    },
+    {
+        "name": "2. Anti-lock Braking System",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Anti-lock-Braking-System-ABS.jpg"
+    },
+    {
+        "name": "3. Airbag Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Airbag-Indicator.jpg"
+    },
+    {
+        "name": "4. Oil Level Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Oil-Level-Warning-Light.jpg"
+    },
+    {
+        "name": "5. Oil Pressure Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Oil-Pressure-Warning-Light.jpg"
+    },
+    {
+        "name": "6. Battery Charge Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Battery-Charge-Warning-Light.jpg"
+    },
+    {
+        "name": "7. Coolant Temperature Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Coolant-Temperature-Warning-Light.jpg"
+    },
+    {
+        "name": "8. Tire Pressure Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Tire-Pressure-Warning-Light.jpg"
+    },
+    {
+        "name": "9. Traction Control/ESP Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Traction-Control-ESP-Light.jpg"
+    },
+    {
+        "name": "10. Service Engine Soon",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Service-Engine-Soon.jpg"
+    },
+    {
+        "name": "11. Low Washer Fluid Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Low-Washer-Fluid-Light.jpg"
+    },
+    {
+        "name": "12. Automatic Shift Lock Symbol",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Automatic-Shift-Lock-Symbol.jpg"
+    },
+    {
+        "name": "13. Reduced Engine Power",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Reduced-Engine-Power.jpg"
+    },
+    {
+        "name": "14. Lambda Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Lambda-Warning-Light.jpg"
+    },
+    {
+        "name": "15. Low Coolant Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Low-Coolant-Indicator.jpg"
+    },
+    {
+        "name": "16. Glow Plug Indicator (Diesel)",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Glow-Plug-Indicator.jpg"
+    },
+    {
+        "name": "17. Fuel Filter Level Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Fuel-Filter-Level-Warning.jpg"
+    },
+    {
+        "name": "18. Power Steering Level Symbol",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Power-Steering-Level-Symbol.jpg"
+    },
+    {
+        "name": "19. Electronic Throttle Control Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Electronic-Throttle-Control-Light.jpg"
+    },
+    {
+        "name": "20. Particle Filter Warning (Diesel)",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Particle-Filter-Warning.jpg"
+    },
+    {
+        "name": "21. Low Fuel Level",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Low-Fuel-Level.jpg"
+    },
+    {
+        "name": "22. Catalytic Converter Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Catalytic-Converter-Warning.jpg"
+    },
+    {
+        "name": "23. Master Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Master-Warning-Light.png"
+    },
+    {
+        "name": "24. Blinking Engine Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Blinking-Engine-Light.jpg"
+    },
+    {
+        "name": "25. Transmission Temperature Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Transmission-Temperature-Warning-1.jpg"
+    },
+    {
+        "name": "26. Traction Control Off",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Traction-Control-Off.jpg"
+    },
+    {
+        "name": "27. Powertrain\u00a0Fault",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Powertrain-Fault.jpg"
+    },
+    {
+        "name": "28. Overdrive Off indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Overdrive-Off-indicator.jpg"
+    },
+    {
+        "name": "29. Parking Brake Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Parking-Brake-Light.jpg"
+    },
+    {
+        "name": "30. Differential Temperature Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Differential-Temperature-Warning.jpg"
+    },
+    {
+        "name": "31. DTC Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/DTC-Warning-Light.jpg"
+    },
+    {
+        "name": "32. ESP BAS",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/ESP-BAS.jpg"
+    },
+    {
+        "name": "33. Automatic Gearbox Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Automatic-Gearbox-Warning.jpg"
+    },
+    {
+        "name": "34. Brake Pad Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Brake-Pad-Warning.jpg"
+    },
+    {
+        "name": "35. Brake Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Brake-Warning-Light.jpg"
+    },
+    {
+        "name": "36. Service Vehicle Soon",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Service-Vehicle-Soon.jpg"
+    },
+    {
+        "name": "37. 4WD Engaged Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/4WD-Engaged-Indicator.jpg"
+    },
+    {
+        "name": "38. 2WD Engaged Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/2WD-Engaged-Indicator.jpg"
+    },
+    {
+        "name": "39. All Wheel Drive (AWD/4WD)",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/All-Wheel-Drive.jpg"
+    },
+    {
+        "name": "40. Hazard Lights On",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Hazard-Lights-On.jpg"
+    },
+    {
+        "name": "41. Door Ajar Symbol",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Door-Ajar-Symbol.jpg"
+    },
+    {
+        "name": "42. Hood Open",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Hood-Open.jpg"
+    },
+    {
+        "name": "43. Lane Departure Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Lane-Departure-Warning.jpg"
+    },
+    {
+        "name": "44. Forward Collision Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Forward-Collision-Warning.jpg"
+    },
+    {
+        "name": "45. SRS Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/SRS-Light.jpg"
+    },
+    {
+        "name": "46. Seatbelt Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Seat-Belt-Indicator.jpg"
+    },
+    {
+        "name": "47. Side Airbag Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Side-Airbag-Warning-Light.jpg"
+    },
+    {
+        "name": "48. Power Steering Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Power-Steering-Warning-Light.jpg"
+    },
+    {
+        "name": "49. Icy Road Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Icy-Road-Warning-Light.jpg"
+    },
+    {
+        "name": "50. Distance Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Distance-Warning.jpg"
+    },
+    {
+        "name": "51. Bonnet Open",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Bonnet-Open.jpg"
+    },
+    {
+        "name": "52. Headlight Range Control",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Headlight-Range-Control.jpg"
+    },
+    {
+        "name": "53. Exterior Light Fault",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Exterior-Light-Fault.jpg"
+    },
+    {
+        "name": "54. Highbeam Light Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Highbeam-Light-Indicator.jpg"
+    },
+    {
+        "name": "55. Auto High Beam Lights",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Auto-High-Beam-Lights.jpg"
+    },
+    {
+        "name": "56. Position Light Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Position-Light-Indicator.jpg"
+    },
+    {
+        "name": "57. Low Beam Indicator Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Low-Beam-Indicator-Light.jpg"
+    },
+    {
+        "name": "58. Front Fog Lights On",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Front-Fog-Lights-On.jpg"
+    },
+    {
+        "name": "59. Rear Fog Light On",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Rear-Fog-Light-On.jpg"
+    },
+    {
+        "name": "60. Turn Lights Warning Symbol",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Turn-Lights-Warning-Symbol.jpg"
+    },
+    {
+        "name": "61. Windshield Defrost Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Windshield-Defrost-Indicator.jpg"
+    },
+    {
+        "name": "62. Rear Window Defrost",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Rear-Window-Defrost.jpg"
+    },
+    {
+        "name": "63. Cruise Control On Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Cruise-Control-On-Indicator.jpg"
+    },
+    {
+        "name": "64. Cruise Control Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Cruise-control-warning-light.jpg"
+    },
+    {
+        "name": "65. Cruise Control Speed Limiter",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Cruise-Control-Speed-Limiter.jpg"
+    },
+    {
+        "name": "66. Cruise Control SET Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Cruise-Control-SET-Indicator.jpg"
+    },
+    {
+        "name": "67. Shift Up Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Shift-Up-Indicator.jpg"
+    },
+    {
+        "name": "68. Shift Down Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Shift-Down-Indicator.jpg"
+    },
+    {
+        "name": "69. Auto Windshield Wiper",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Auto-Windshield-Wiper.jpg"
+    },
+    {
+        "name": "70. Recirculated Cabin Air",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Recirculated-Cabin-Air.jpg"
+    },
+    {
+        "name": "71. Heater Blower Fan On",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Heater-Blower-Fan-On.jpg"
+    },
+    {
+        "name": "72. Heated Seats On",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Heated-Seats-On.jpg"
+    },
+    {
+        "name": "73. Hill Descent Control",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Hill-Descent-Control.jpg"
+    },
+    {
+        "name": "74. Steering Lock Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Steering-Lock-Warning-Light.jpg"
+    },
+    {
+        "name": "75. Brake Fluid Level Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Brake-Fluid-Level-Warning.jpg"
+    },
+    {
+        "name": "76. Key Not in Vehicle Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Key-Not-in-Vehicle-Indicator.jpg"
+    },
+    {
+        "name": "77. Immobilizer Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Immobilizer-Indicator.jpg"
+    },
+    {
+        "name": "78. Ignition Switch Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Ignition-Switch-Warning.jpg"
+    },
+    {
+        "name": "79. Low Electric Battery Charge",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Low-Electric-Battery-Charge.jpg"
+    },
+    {
+        "name": "80. Brake Lights Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Brake-Lights-Warning.jpg"
+    },
+    {
+        "name": "81. Air Suspension Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Air-Suspension-Warning.jpg"
+    },
+    {
+        "name": "82. Suspension Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Suspension-Warning-Light.jpg"
+    },
+    {
+        "name": "83. Car on Ramp Mode",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Car-on-Ramp-Mode.jpg"
+    },
+    {
+        "name": "84. ECO Mode On Indicator",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/ECO-Mode-On-Indicator.jpg"
+    },
+    {
+        "name": "85. Rear Spoiler Warning",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Rear-Spoiler-Warning.jpg"
+    },
+    {
+        "name": "86. Lane Assist",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Lane-Assist.jpg"
+    },
+    {
+        "name": "87. Exhaust Fluid (Diesel)",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Exhaust-Fluid.jpg"
+    },
+    {
+        "name": "88. Convertible Roof Warning Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Convertible-Roof-Warning-Light.jpg"
+    },
+    {
+        "name": "89. Blue Coolant Temp Light",
+        "url": "https://mechanicbase.com/wp-content/uploads/2021/08/Blue-Engine-Temp-Light.jpg"
+    }
+]
